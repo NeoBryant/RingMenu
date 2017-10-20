@@ -1,0 +1,303 @@
+
+div#bottom-positioner {
+    position: absolute;
+    left: 29%;
+
+    overflow: hidden;
+
+    width: 560px;
+    height: 700px;
+    margin: auto;
+}
+/* info-bar */
+div#info-bar {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+
+    overflow: hidden;
+
+    width: 10px;
+    height: 10px;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #6c6a6b;
+}
+div#button:hover #info-bar {
+    position: absolute;
+    bottom: 23%;
+    left: 42.5%;
+
+    width: 120px;
+    height: 120px;
+
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #6c6a6b;
+}
+div#button:hover .user span {
+    font-size: 20px;
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    opacity: 1;
+    color: white;
+}
+div#button:hover .comment span {
+    font-size: 35px;
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    opacity: 1;
+    color: white;
+}
+li.user {
+    position: absolute;
+    top: 10px;
+}
+li.user span {
+    font-size: 0;
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    color: white;
+}
+li.comment {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+li.comment span {
+    font-size: 0;
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    color: white;
+}
+li.mine {
+    display: inline-block;
+}
+li.mine span {
+    position: absolute;
+    bottom: 7px;
+
+    display: inline-block;
+
+    margin-left: 5px;
+
+    color: #079e6e;
+}
+li.posted {
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+li.like {
+    position: absolute;
+    top: 75px;
+    left: 60px;
+}
+li.button {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+
+    border-radius: 50%;
+}
+
+/*  control-ring-container  */
+li.mask {
+    bottom: 16%;
+    left: 50%;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    background: url(assets/images/nomask.png) no-repeat 50% 50% #666;
+    background-size: 0;
+}
+div#button:hover .mask {
+    bottom: 21%;
+    left: 39%;
+
+    opacity: 1;
+    background: url(assets/images/nomask.png) no-repeat 50% 50% #666;
+    background-size: 50%;
+}
+li.history {
+    bottom: 16%;
+    left: 50%;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    background: url(assets/images/history.png) no-repeat 50% 50% #666;
+    background-size: 0;
+}
+div#button:hover .history {
+    bottom: 15%;
+    left: 36%;
+
+    opacity: 1;
+    background: url(assets/images/history.png) no-repeat 50% 50% #666;
+    background-size: 50%;
+}
+li.message {
+    bottom: 16%;
+    /* background: url(assets/images/message.png) no-repeat 50% 50% #666666;*/
+    left: 50%;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    background: url(assets/images/message.png) no-repeat 50% 50% #666;
+    background-size: 0;
+}
+div#button:hover .message {
+    bottom: 9%;
+    left: 39%;
+
+    opacity: 1;
+    background: url(assets/images/message.png) no-repeat 50% 50% #666;
+    background-size: 50%;
+}
+span.unread {
+    display: none;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+}
+
+div#button:hover .unread {
+    line-height: 20px;
+
+    position: absolute;
+    bottom: 20px;
+    left: 24px;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+
+li.setting {
+    bottom: 16%;
+    left: 50%;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    background: url(assets/images/setting.png) no-repeat 50% 50% #666;
+    background-size: 0;
+}
+div#button:hover .setting {
+    bottom: 6%;
+    left: 46%;
+
+    opacity: 1;
+    background: url(assets/images/setting.png) no-repeat 50% 50% #666;
+    background-size: 50%;
+}
+li.sign {
+    bottom: 16%;
+    left: 50%;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: 0;
+    background: url(assets/images/signin.png) no-repeat 50% 50% #666;
+    background-size: 0;
+}
+div#button:hover .sign {
+    bottom: 7%;
+    left: 54%;
+
+    opacity: 1;
+    background: url(assets/images/signin.png) no-repeat 50% 50% #666;
+    background-size: 50%;
+}
+
+/* apb  */
+div.apb {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+
+    -webkit-transition: all 500ms ease-out 250ms;
+       -moz-transition: all 500ms ease-out 250ms;
+         -o-transition: all 500ms ease-out 250ms;
+            transition: all 500ms ease-out 250ms;
+
+    opacity: .7;
+    border-radius: 50%;
+    background: url(assets/images/atplus_white.png) no-repeat 50% 50% #7171c6;
+    background-size: 80%;
+}
+div#button:hover .apb {
+    transform: scale(2);
+
+    opacity: 1;
+    background: url(assets/images/atplus_green.png) no-repeat 50% 50% rgba(48, 63, 159, 1);
+    background-size: 70%;
+}
+
+/* li in ul */
+ul {
+    list-style-type: none;
+}
